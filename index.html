@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Nayak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="main-nav container flex">
+            <div href="#" class="logo flex" onclick="relode()">
+                <a href="#">The</a>
+                <a href="#" class="logo-bg">Nayak</a>
+                <a href="#">Media</a>
+            </div>
+            <ul class="flex">
+                <li>
+                    <a href="#" class="hover-links" id="cricket" onclick="onNavItemClick('cricket')">Cricket</a>
+                </li>
+                <li>
+                    <a href="#"  class="hover-links" id="manipur" onclick="onNavItemClick('manipur')">Manipur</a>
+                </li>
+                <li>
+                    <a href="#"  class="hover-links" id="technology" onclick="onNavItemClick('technology')">Technology</a>
+                </li>
+                <li>
+                    <a href="#"  class="hover-links" id="politics"onclick="onNavItemClick('politics')">Politics</a>
+                </li>
+            </ul>
+
+            <div class="input-section">
+                <input id="search-text" type="text" placeholder="e.g ,science"class="search-text">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="card-container container flex" id="card-container">
+           
+        </div>
+    </main>
+
+    <template id="news-card-tamplates">
+        <div class="card">
+            <div class="card-hrader">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image"></img>
+            </div>
+
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">this is title</h3>
+                <h6 class="news-source" id="news-source">Date -> 23/07/2023.</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae tempore nemo reprehenderit voluptatum ipsam? Expedita.</p>
+            </div>
+        </div>
+    </template>
+   <script src="news.js"></script>
+</body>
+</html>
