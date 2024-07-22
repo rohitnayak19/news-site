@@ -34,6 +34,11 @@ function bindData(articles) {
     const cardsContainer = document.getElementById("card-container");
     const newsCardTemplate = document.getElementById("news-card-templates");
 
+    if (!newsCardTemplate) {
+        console.error('No element found with id "news-card-templates"');
+        return;
+    }
+
     cardsContainer.innerHTML = "";
 
     articles.forEach((article) => {
